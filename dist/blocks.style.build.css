@@ -1,0 +1,27 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-rocco-lyrics .lyrics-title {
+  font-family: cursive;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 0; }
+  .wp-block-rocco-lyrics .lyrics-title textarea {
+    text-align: center; }
+
+.wp-block-rocco-lyrics .lyrics-artist {
+  text-align: center;
+  font-style: italic;
+  font-size: small;
+  margin: 0; }
+  .wp-block-rocco-lyrics .lyrics-artist textarea {
+    text-align: center; }

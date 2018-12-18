@@ -1,0 +1,32 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-rocco-lyrics {
+  .lyrics-title {
+    font-family: cursive;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0;
+
+    textarea {
+      text-align: center;
+    }
+  }
+
+  .lyrics-artist {
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+    margin: 0;
+
+    textarea {
+      text-align: center;
+    }
+  }
+
+
+}
