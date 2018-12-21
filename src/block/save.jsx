@@ -9,11 +9,19 @@ const { __ } = wp.i18n;
 class LyricBlockSave extends Component {
     render() {
         const { className, attributes } = this.props;
-        const { artist, title } = attributes;
+        const { artist, title, showTitle, externalLink } = attributes;
         return (
             <div className={ className }>
-                <h2 className='lyrics-title'>{ title }</h2>
+                { showTitle && (
+                    <h2 className='lyrics-title'>{ title }</h2>
+                ) }
                 <p className='lyrics-artist'>{ artist }</p>
+                <InnerBlocks.Content />
+                { externalLink && (
+                    <div className='lyrics-external-link'>
+                        <a href={ externalLink } target='_blank'>{ externalLink }</a>
+                    </div>
+                ) }
             </div>
         );
     }

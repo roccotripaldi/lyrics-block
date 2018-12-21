@@ -7,6 +7,8 @@ const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.b
 
 import LyricBlockEditor from './edit.jsx';
 import LyricBlockSave from './save.jsx';
+import SongSegmentEditor from './edit-song-segment.jsx';
+import SongSegmentSave from './save-song-segment.jsx';
 
 //  Import CSS.
 import './style.scss';
@@ -41,8 +43,38 @@ registerBlockType( 'rocco/lyrics', {
         externalLink: {
             type: 'string',
 			default: 'https://genius.com/Louis-armstrong-hello-dolly-lyrics'
+        },
+        showTitle: {
+            type: 'boolean',
+            default: true
         }
     },
 	edit: LyricBlockEditor,
 	save: LyricBlockSave
+} );
+
+registerBlockType( 'rocco/song-segment', {
+    title: __( 'Song segment' ),
+    icon: '',
+    category: 'common',
+    parent: 'rocco/lyrics',
+    attributes: {
+        content: {
+            type: 'string'
+        },
+        type: {
+            type: 'string',
+            default: 'Verse'
+        },
+        repeats: {
+            type: 'integer',
+            default: 1
+        },
+        showHeading: {
+            type: 'boolean',
+            default: true
+        }
+    },
+    edit: SongSegmentEditor,
+    save: SongSegmentSave
 } );
