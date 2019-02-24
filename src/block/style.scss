@@ -4,7 +4,9 @@
  * CSS for both Frontend+Backend.
  */
 
-.wp-block-rocco-lyrics {
+.rocco-lyrics {
+  padding: 24px;
+  background-color: lightyellow;
   .lyrics-title {
     font-family: cursive;
     text-align: center;
@@ -28,5 +30,20 @@
     }
   }
 
+  .lyrics-heading {
+    font-family: cursive;
+  }
 
+  .lyrics-repeats {
+    font-size: small;
+    font-family: italic;
+  }
+
+  textarea {
+    background-color: lightyellow;
+  }
+
+  &.is-saved {
+    margin: 24px;
+  }
 }

@@ -26,23 +26,14 @@ registerBlockType( 'rocco/lyrics', {
     attributes: {
         title: {
             type: 'string',
-            default: 'Hello Dolly',
+            default: 'Farmhouse',
         },
         artist: {
             type: 'string',
-            default: 'Louis Armstrong',
-        },
-        holiday: {
-            type: 'string',
-            default: '',
-        },
-        isDuet: {
-            type: 'boolean',
-            default: false,
+            default: 'Anastasio/Marshal',
         },
         externalLink: {
             type: 'string',
-			default: 'https://genius.com/Louis-armstrong-hello-dolly-lyrics'
         },
         showTitle: {
             type: 'boolean',
@@ -57,10 +48,15 @@ registerBlockType( 'rocco/song-segment', {
     title: __( 'Song segment' ),
     icon: '',
     category: 'common',
-    parent: 'rocco/lyrics',
+    parent: [ 'rocco/lyrics' ],
     attributes: {
         content: {
-            type: 'string'
+            type: 'string',
+            default: 'Welcome this is a farmhouse.<br />' +
+            'We have cluster flies alas<br />' +
+            'and this time of year is bad.<br />' +
+            'We are so very sorry<br />' +
+            'there is little we can do but swat them.<br />'
         },
         type: {
             type: 'string',

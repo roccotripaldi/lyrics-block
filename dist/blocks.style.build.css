@@ -9,19 +9,30 @@
  *
  * CSS for both Frontend+Backend.
  */
-.wp-block-rocco-lyrics .lyrics-title {
-  font-family: cursive;
-  text-align: center;
-  font-size: xx-large;
-  font-weight: bold;
-  margin: 0; }
-  .wp-block-rocco-lyrics .lyrics-title textarea {
-    text-align: center; }
-
-.wp-block-rocco-lyrics .lyrics-artist {
-  text-align: center;
-  font-style: italic;
-  font-size: small;
-  margin: 0; }
-  .wp-block-rocco-lyrics .lyrics-artist textarea {
-    text-align: center; }
+.rocco-lyrics {
+  padding: 24px;
+  background-color: lightyellow; }
+  .rocco-lyrics .lyrics-title {
+    font-family: cursive;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0; }
+    .rocco-lyrics .lyrics-title textarea {
+      text-align: center; }
+  .rocco-lyrics .lyrics-artist {
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+    margin: 0; }
+    .rocco-lyrics .lyrics-artist textarea {
+      text-align: center; }
+  .rocco-lyrics .lyrics-heading {
+    font-family: cursive; }
+  .rocco-lyrics .lyrics-repeats {
+    font-size: small;
+    font-family: italic; }
+  .rocco-lyrics textarea {
+    background-color: lightyellow; }
+  .rocco-lyrics.is-saved {
+    margin: 24px; }

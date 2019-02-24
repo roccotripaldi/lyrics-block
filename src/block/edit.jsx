@@ -1,7 +1,7 @@
 /*
  * External dependencies
  */
-const { Component, Fragment } = wp.element;
+const { Component } = wp.element;
 const { InnerBlocks, InspectorControls, PlainText } = wp.editor;
 const { PanelBody, TextControl, ToggleControl } = wp.components;
 const { __ } = wp.i18n;
@@ -11,7 +11,7 @@ class LyricBlockEditor extends Component {
         const { className, attributes, setAttributes } = this.props;
         const { artist, title, showTitle, externalLink } = attributes;
         return (
-            <Fragment>
+            <div className="rocco-lyrics">
                 <InspectorControls>
                     <PanelBody>
                         <ToggleControl
@@ -61,48 +61,34 @@ class LyricBlockEditor extends Component {
                     </p>
                 </div>
                 <InnerBlocks
-                    allowedBlocks={ [ 'rocco/song-segment' ] }
+                    allowedBlocks={ [ 'rocco/song-segment', 'core/paragraph', 'core/heading' ] }
                     templateLock={ false }
                     template={ [
+                        [ 'rocco/song-segment' ],
                         [
                             'rocco/song-segment',
                             {
-                                content: 'Hello, Dolly<br />' +
-                                'This is Louis, Dolly<br />' +
+                                content: 'She didn\'t beg oh, not enough<br />' +
+                                'She didn\'t stay when things got tough<br />' +
                                 'It\'s so nice to have you back where you belong<br />' +
-                                'You\'re lookin\' swell, Dolly<br />' +
-                                'I can tell, Dolly<br />' +
-                                'You\'re still glowin\'...you\'re still crowin\'<br />' +
-                                'You\'re still goin\' strong<br />' +
-                                'I feel the room swayin\'<br />' +
-                                'While the band\'s playin\'<br />' +
-                                'One of our old favourite songs from way back when<br />' +
-                                'So take her wrap, fellas find her an empty lap, fellas<br />' +
-                                'Dolly\'ll never go away again<br />',
-                                showLabel: false
+                                'I told a lie and she got mad<br />' +
+                                'she wasn\'t there when things got bad.',
+                                type: 'Bridge',
+                                showHeading: true
                             },
                         ],
                         [
                             'rocco/song-segment',
                             {
-                                content: 'Hello, Dolly<br />' +
-                                'Well, hello, Dolly<br />' +
-                                'It\'s so nice to have you back where you belong<br />' +
-                                'You\'re lookin\' swell, Dolly<br />' +
-                                'I can tell, Dolly<br />' +
-                                'You\'re still glowin\'...you\'re still crowin\'<br />' +
-                                'You\'re still goin\' strong<br />' +
-                                'I feel the room swayin\'<br />' +
-                                'While the band keeps on playin\'<br />' +
-                                'One of our old favourite songs from way back when<br />' +
-                                'So...golly, gee, fellas<br />' +
-                                'Have a little faith in me, fellas<br />' +
-                                'Dolly\'ll never go away<br />' +
-                                'I said she\'ll never go away<br />' +
-                                'Dolly\'ll never go away again',
-                                showLabel: false
+                                content: 'I never ever saw the northern lights<br />' +
+                                'I never really heard of cluster-flies<br />' +
+                                'I never ever saw the stars so bright<br />' +
+                                'In the farmhouse things will be all right.<br />',
+                                type: 'Chorus',
+                                repeats: 2,
+                                showHeading: true
                             },
-                        ]
+                        ],
                     ] }
                 />
                 {
@@ -112,7 +98,7 @@ class LyricBlockEditor extends Component {
                         </div>
                     )
                 }
-            </Fragment>
+            </div>
         );
     }
 }

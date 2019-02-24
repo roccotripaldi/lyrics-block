@@ -1,18 +1,25 @@
 /*
  * External dependencies
  */
-const { Component, Fragment } = wp.element;
-const { InnerBlocks, InspectorControls, PlainText } = wp.editor;
-const { PanelBody, TextControl } = wp.components;
-const { __ } = wp.i18n;
+const { Component, RawHTML } = wp.element;
+const { __, sprintf } = wp.i18n;
+
 
 class SongSegmentSave extends Component {
     render() {
         const { attributes } = this.props;
-        const { content } = attributes;
+        const { content, showHeading, repeats, type } = attributes;
         return (
             <div className='lyrics-song-segment'>
-                { content }
+                { showHeading && (
+                    <h3 className="lyrics-heading">{ type }</h3>
+                ) }
+                { repeats > 1 && (
+                  <p className="lyrics-repeats">
+                      { sprintf( __( 'Repeat %d times' ), repeats ) }
+                  </p>
+                ) }
+                <RawHTML className="lyrics-content">{ content }</RawHTML>
             </div>
         );
     }

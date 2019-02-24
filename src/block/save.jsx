@@ -11,7 +11,7 @@ class LyricBlockSave extends Component {
         const { className, attributes } = this.props;
         const { artist, title, showTitle, externalLink } = attributes;
         return (
-            <div className={ className }>
+            <div className="rocco-lyrics is-saved">
                 { showTitle && (
                     <h2 className='lyrics-title'>{ title }</h2>
                 ) }
