@@ -26,11 +26,11 @@ registerBlockType( 'rocco/lyrics', {
     attributes: {
         title: {
             type: 'string',
-            default: 'Farmhouse',
+            default: 'Franklin\'s Tower',
         },
         artist: {
             type: 'string',
-            default: 'Anastasio/Marshal',
+            default: 'Robert Hunter',
         },
         externalLink: {
             type: 'string',
@@ -52,11 +52,10 @@ registerBlockType( 'rocco/song-segment', {
     attributes: {
         content: {
             type: 'string',
-            default: 'Welcome this is a farmhouse.<br />' +
-            'We have cluster flies alas<br />' +
-            'and this time of year is bad.<br />' +
-            'We are so very sorry<br />' +
-            'there is little we can do but swat them.<br />'
+            default: 'In another time\'s forgotten space\n' +
+            'Your eyes looked through your mother\'s face\n' +
+            'Wildflower seed on the sand and stone\n' +
+            'May the four winds blow you safely home'
         },
         type: {
             type: 'string',

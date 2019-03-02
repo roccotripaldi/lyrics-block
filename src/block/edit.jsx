@@ -68,25 +68,10 @@ class LyricBlockEditor extends Component {
                         [
                             'rocco/song-segment',
                             {
-                                content: 'She didn\'t beg oh, not enough<br />' +
-                                'She didn\'t stay when things got tough<br />' +
-                                'It\'s so nice to have you back where you belong<br />' +
-                                'I told a lie and she got mad<br />' +
-                                'she wasn\'t there when things got bad.',
-                                type: 'Bridge',
-                                showHeading: true
-                            },
-                        ],
-                        [
-                            'rocco/song-segment',
-                            {
-                                content: 'I never ever saw the northern lights<br />' +
-                                'I never really heard of cluster-flies<br />' +
-                                'I never ever saw the stars so bright<br />' +
-                                'In the farmhouse things will be all right.<br />',
+                                content: 'Roll away, the dew',
                                 type: 'Chorus',
-                                repeats: 2,
-                                showHeading: true
+                                showHeading: true,
+                                repeats: 4
                             },
                         ],
                     ] }
