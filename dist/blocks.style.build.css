@@ -11,7 +11,9 @@
  */
 .rocco-lyrics {
   padding: 24px;
-  background-color: lightyellow; }
+  background-color: lightyellow;
+  -webkit-box-shadow: 0 0 2px #777;
+          box-shadow: 0 0 2px #777; }
   .rocco-lyrics .lyrics-title {
     font-family: cursive;
     text-align: center;
