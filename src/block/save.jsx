@@ -18,7 +18,11 @@ class LyricBlockSave extends Component {
                 <InnerBlocks.Content />
                 { externalLink && (
                     <div className='lyrics-external-link'>
-                        <a className='components-external-link'  href={ externalLink } target="_blank">
+                        <a
+                            className='components-external-link'
+                            href={ externalLink } target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             { title }
                             <Dashicon icon="external" className="components-external-link__icon" />
                         </a>
