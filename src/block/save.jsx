@@ -3,8 +3,7 @@
  */
 const { Component } = wp.element;
 const { InnerBlocks } = wp.editor;
-const { ExternalLink } = wp.components;
-const { __ } = wp.i18n;
+const { Dashicon } = wp.components;
 
 class LyricBlockSave extends Component {
     render() {
@@ -19,7 +18,10 @@ class LyricBlockSave extends Component {
                 <InnerBlocks.Content />
                 { externalLink && (
                     <div className='lyrics-external-link'>
-                        <ExternalLink href={ externalLink }>{ title }</ExternalLink>
+                        <a className='components-external-link'  href={ externalLink } target="_blank">
+                            { title }
+                            <Dashicon icon="external" className="components-external-link__icon" />
+                        </a>
                     </div>
                 ) }
             </div>
