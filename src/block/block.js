@@ -62,8 +62,8 @@ registerBlockType( 'rocco/song-segment', {
             default: 'Verse'
         },
         repeats: {
-            type: 'integer',
-            default: 1
+            type: 'string',
+            default: '1'
         },
         showHeading: {
             type: 'boolean',
