@@ -52,9 +52,9 @@ registerBlockType( 'rocco/song-segment', {
     attributes: {
         content: {
             type: 'string',
-            default: 'In another time\'s forgotten space\n' +
-            'Your eyes looked through your mother\'s face\n' +
-            'Wildflower seed on the sand and stone\n' +
+            default: 'In another time\'s forgotten space<br />' +
+            'Your eyes looked through your mother\'s face<br />' +
+            'Wildflower seed on the sand and stone<br />' +
             'May the four winds blow you safely home'
         },
         type: {
