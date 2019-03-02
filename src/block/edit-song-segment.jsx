@@ -46,7 +46,7 @@ class SongSegmentEditor extends Component {
                             />
                         </h3>
                     ) }
-                    { repeats > 1 && (
+                    { parseInt( repeats ) > 1 && (
                         <p className='lyrics-repeats'>
                             { sprintf( __( 'Repeat %d times' ), repeats ) }
                         </p>

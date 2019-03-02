@@ -9,12 +9,13 @@ class SongSegmentSave extends Component {
     render() {
         const { attributes } = this.props;
         const { content, showHeading, repeats, type } = attributes;
+        console.log( type, repeats );
         return (
             <div className='lyrics-song-segment'>
                 { showHeading && (
                     <h3 className="lyrics-heading">{ type }</h3>
                 ) }
-                { repeats > 1 && (
+                { parseInt( repeats ) > 1 && (
                   <p className="lyrics-repeats">
                       { sprintf( __( 'Repeat %d times' ), repeats ) }
                   </p>

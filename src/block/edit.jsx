@@ -71,7 +71,7 @@ class LyricBlockEditor extends Component {
                                 content: 'Roll away, the dew',
                                 type: 'Chorus',
                                 showHeading: true,
-                                repeats: 4
+                                repeats: '4'
                             },
                         ],
                     ] }
