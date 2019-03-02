@@ -3,7 +3,7 @@
  */
 const { Component } = wp.element;
 const { InnerBlocks, InspectorControls, PlainText } = wp.editor;
-const { PanelBody, TextControl, ToggleControl } = wp.components;
+const { ExternalLink, PanelBody, TextControl, ToggleControl } = wp.components;
 const { __ } = wp.i18n;
 
 class LyricBlockEditor extends Component {
@@ -79,7 +79,7 @@ class LyricBlockEditor extends Component {
                 {
                     externalLink && (
                         <div className='lyrics-external-link'>
-                            <a href={ externalLink} target='_blank'>{ externalLink }</a>
+                            <ExternalLink href={ externalLink }>{ title }</ExternalLink>
                         </div>
                     )
                 }
