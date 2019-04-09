@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Lyrics
- * Plugin URI: https://github.com/ahmadawais/create-guten-block/
+ * Plugin URI: https://github.com/roccotripaldi/lyrics
  * Description: Add song lyrics to your WordPress posts. Lyrics is a Gutenberg plugin created via create-guten-block.
  * Author: roccotripaldi
  * Author URI: http://roccotripaldicom
@@ -9,7 +9,6 @@
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  *
- * @package CGB
  */
 
 // Exit if accessed directly.
@@ -20,4 +19,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Block Initializer.
  */
-require_once plugin_dir_path( __FILE__ ) . 'src/init.php';
+require_once plugin_dir_path( __FILE__ ) . 'init.php';
