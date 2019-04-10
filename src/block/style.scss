@@ -33,19 +33,17 @@
 
   .lyrics-heading {
     font-family: cursive;
+    margin: 0;
   }
 
   .lyrics-repeats {
     font-size: small;
-    font-family: italic;
+    font-style: italic;
+    margin: 0;
   }
 
   textarea {
     background-color: lightyellow;
-  }
-
-  &.is-saved {
-    margin: 24px;
   }
 
   .lyrics-external-link {
@@ -53,5 +51,21 @@
     font-size: smaller;
     padding-top: 20px;
     font-style: italic;
+  }
+
+  &.is-saved {
+    margin: 24px;
+    .lyrics-title {
+      margin: 0 0 10px 0;
+    }
+    .lyrics-artist {
+      margin: 0 0 40px 0;
+    }
+    .wp-block-rocco-song-segment {
+      margin-bottom: 40px;
+    }
+    .lyrics-repeats, .lyrics-heading {
+      margin-bottom: 10px;
+    }
   }
 }
