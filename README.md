@@ -16,11 +16,11 @@ or by downloading this repository as a .zip archive.
 
 ### Editing lyrics
 
-![editing lyrics](https://cloudup.com/c1u7GHLEOV8)
+![editing lyrics](https://cldup.com/kbxHZ9Ptd6-2000x2000.png)
 
 ### Viewing lyrics
 
-![viewing lyrics](https://cloudup.com/ca9lS0aVHhK)
+![viewing lyrics](https://cldup.com/Du4IF_mwmn-3000x3000.png)
 
 ## Developing this plugin
 
