@@ -11,7 +11,7 @@ class LyricBlockEditor extends Component {
         const { className, attributes, setAttributes } = this.props;
         const { artist, title, showTitle, externalLink } = attributes;
         return (
-            <div className="rocco-lyrics">
+            <div>
                 <InspectorControls>
                     <PanelBody>
                         <ToggleControl
@@ -59,30 +59,30 @@ class LyricBlockEditor extends Component {
                             placeholder={ __( 'Artist…' ) }
                         />
                     </p>
+                    <InnerBlocks
+                        allowedBlocks={ [ 'rocco/song-segment', 'core/paragraph', 'core/heading' ] }
+                        templateLock={ false }
+                        template={ [
+                            [ 'rocco/song-segment' ],
+                            [
+                                'rocco/song-segment',
+                                {
+                                    content: 'Roll away, the dew',
+                                    type: 'Chorus',
+                                    showHeading: true,
+                                    repeats: '4'
+                                },
+                            ],
+                        ] }
+                    />
+                    {
+                        externalLink && (
+                            <div className='lyrics-external-link'>
+                                <ExternalLink href={ externalLink }>{ title }</ExternalLink>
+                            </div>
+                        )
+                    }
                 </div>
-                <InnerBlocks
-                    allowedBlocks={ [ 'rocco/song-segment', 'core/paragraph', 'core/heading' ] }
-                    templateLock={ false }
-                    template={ [
-                        [ 'rocco/song-segment' ],
-                        [
-                            'rocco/song-segment',
-                            {
-                                content: 'Roll away, the dew',
-                                type: 'Chorus',
-                                showHeading: true,
-                                repeats: '4'
-                            },
-                        ],
-                    ] }
-                />
-                {
-                    externalLink && (
-                        <div className='lyrics-external-link'>
-                            <ExternalLink href={ externalLink }>{ title }</ExternalLink>
-                        </div>
-                    )
-                }
             </div>
         );
     }

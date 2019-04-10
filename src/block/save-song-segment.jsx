@@ -9,9 +9,8 @@ class SongSegmentSave extends Component {
     render() {
         const { attributes } = this.props;
         const { content, showHeading, repeats, type } = attributes;
-        console.log( type, repeats );
         return (
-            <div className='lyrics-song-segment'>
+            <div>
                 { showHeading && (
                     <h3 className="lyrics-heading">{ type }</h3>
                 ) }

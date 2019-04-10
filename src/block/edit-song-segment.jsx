@@ -36,7 +36,7 @@ class SongSegmentEditor extends Component {
                         />
                     </PanelBody>
                 </InspectorControls>
-                <div className='lyrics-song-segment'>
+                <div>
                     { showHeading && (
                         <h3 className='lyrics-heading'>
                             <PlainText
