@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Lyrics
+ * Plugin Name: Lyrics Block
  * Plugin URI: https://github.com/roccotripaldi/lyrics
  * Description: Add song lyrics to your WordPress posts. Lyrics is a Gutenberg plugin created via create-guten-block.
  * Author: roccotripaldi
