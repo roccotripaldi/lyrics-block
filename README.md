@@ -14,6 +14,14 @@ or by downloading this repository as a .zip archive.
 - ⚙️ You can configure the appearance of the lyrics block using the controls in the sidebar.
 - 🎤 Try it out, and have some fun!
 
+### Editing lyrics
+
+![editing lyrics](https://cloudup.com/c1u7GHLEOV8)
+
+### Viewing lyrics
+
+![viewing lyrics](https://cloudup.com/ca9lS0aVHhK)
+
 ## Developing this plugin
 
 Pull requests are welcome!
