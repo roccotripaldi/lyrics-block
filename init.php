@@ -5,7 +5,6 @@
  * Enqueue CSS/JS of all the blocks.
  *
  * @since   1.0.0
- * @package CGB
  */
 
 // Exit if accessed directly.
@@ -20,12 +19,11 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 1.0.0
  */
 function lyrics_block_block_assets() { // phpcs:ignore
-	// Styles.
 	wp_enqueue_style(
-		'lyrics-cgb-style-css', // Handle.
-		plugins_url( 'lyrics-block/dist/blocks.style.build.css', dirname( __FILE__ ) ), // Block style CSS.
-		array( 'wp-editor' ) // Dependency to include the CSS after it.
-		// filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.style.build.css' ) // Version: File modification time.
+		'lyrics-block-style-css',
+		plugins_url( 'dist/blocks.style.build.css', __FILE__ ),
+		array( 'wp-editor' ),
+		LYRICS_BLOCK_VERSION
 	);
 }
 
@@ -42,21 +40,18 @@ add_action( 'enqueue_block_assets', 'lyrics_block_block_assets' );
  * @since 1.0.0
  */
 function lyrics_block_editor_assets() { // phpcs:ignore
-	// Scripts.
 	wp_enqueue_script(
-		'lyrics-cgb-block-js', // Handle.
-		plugins_url( 'lyrics-block/dist/blocks.build.js', dirname( __FILE__ ) ), // Block.build.js: We register the block here. Built with Webpack.
-		array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ), // Dependencies, defined above.
-		// filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.build.js' ), // Version: File modification time.
-		true // Enqueue the script in the footer.
+		'lyrics-block-js',
+		plugins_url( 'dist/blocks.build.js', __FILE__ ),
+		array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ),
+		LYRICS_BLOCK_VERSION,
+		true
 	);
-
-	// Styles.
 	wp_enqueue_style(
-		'lyrics-cgb-block-editor-css', // Handle.
-		plugins_url( 'lyrics-block/dist/blocks.editor.build.css', dirname( __FILE__ ) ), // Block editor CSS.
-		array( 'wp-edit-blocks' ) // Dependency to include the CSS after it.
-		// filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.editor.build.css' ) // Version: File modification time.
+		'lyrics-block-editor-css',
+		plugins_url( 'dist/blocks.editor.build.css', __FILE__ ),
+		array( 'wp-edit-blocks' ),
+		LYRICS_BLOCK_VERSION
 	);
 }
 
