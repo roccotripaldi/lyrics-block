@@ -5,7 +5,7 @@
  * Description: Add song lyrics to your WordPress posts. Lyrics is a Gutenberg plugin created via create-guten-block.
  * Author: roccotripaldi
  * Author URI: http://roccotripaldi.com
- * Version: 0.1-beta
+ * Version: 0.2-beta
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  *
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'LYRICS_BLOCK_VERSION', '0.1-beta' );
+define( 'LYRICS_BLOCK_VERSION', '0.2-beta' );
 
 /**
  * Block Initializer.
