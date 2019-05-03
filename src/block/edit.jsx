@@ -22,7 +22,7 @@ class LyricBlockEditor extends Component {
                     </PanelBody>
                     <PanelBody>
                         <TextControl
-                            label={ __( 'Song Title' ) }
+                            label={ __( 'Title' ) }
                             value={ title }
                             onChange={ value => setAttributes( { title: value } ) }
                         />
@@ -46,7 +46,7 @@ class LyricBlockEditor extends Component {
                     { showTitle && (
                         <h2 className='lyrics-title'>
                             <PlainText
-                                placeholder={ __( 'Song title...' ) }
+                                placeholder={ __( 'Title...' ) }
                                 value={ title }
                                 onChange={ value => setAttributes( { title: value } ) }
                             />
@@ -60,12 +60,12 @@ class LyricBlockEditor extends Component {
                         />
                     </p>
                     <InnerBlocks
-                        allowedBlocks={ [ 'rocco/song-segment', 'core/paragraph', 'core/heading' ] }
+                        allowedBlocks={ [ 'rocco/lyric-section', 'core/paragraph', 'core/heading' ] }
                         templateLock={ false }
                         template={ [
-                            [ 'rocco/song-segment' ],
+                            [ 'rocco/lyrics-section' ],
                             [
-                                'rocco/song-segment',
+                                'rocco/lyrics-section',
                                 {
                                     content: 'Roll away, the dew',
                                     type: 'Chorus',

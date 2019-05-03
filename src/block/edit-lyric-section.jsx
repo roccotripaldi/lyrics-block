@@ -6,7 +6,7 @@ const { RichText, InspectorControls, PlainText } = wp.editor;
 const { PanelBody, ToggleControl, TextControl } = wp.components;
 const { __, sprintf } = wp.i18n;
 
-class SongSegmentEditor extends Component {
+class LyricSectionEditor extends Component {
     render() {
         const { attributes, setAttributes } = this.props;
         const { content, showHeading, type, repeats } = attributes;
@@ -15,14 +15,14 @@ class SongSegmentEditor extends Component {
                 <InspectorControls>
                     <PanelBody>
                         <ToggleControl
-                            label={ __( 'Show Segment Heading' ) }
+                            label={ __( 'Show Section Heading' ) }
                             checked={ showHeading }
                             onChange={ value => setAttributes( { showHeading: value } ) }
                         />
                     </PanelBody>
                     <PanelBody>
                         <TextControl
-                            label={ __( 'Song Segment Type' ) }
+                            label={ __( 'Section Type' ) }
                             value={ type }
                             onChange={ value => setAttributes( { type: value } ) }
                         />
@@ -40,7 +40,7 @@ class SongSegmentEditor extends Component {
                     { showHeading && (
                         <h3 className='lyrics-heading'>
                             <PlainText
-                                placeholder={ __( 'Segment type...' ) }
+                                placeholder={ __( 'Section type...' ) }
                                 value={ type }
                                 onChange={ value => setAttributes( { type: value } ) }
                             />
@@ -62,4 +62,4 @@ class SongSegmentEditor extends Component {
     }
 }
 
-export default SongSegmentEditor;
+export default LyricSectionEditor;

@@ -1,6 +1,6 @@
 # Lyrics
 
-Adds song lyrics to your WordPress posts and pages.
+Adds lyrics to your WordPress posts and pages.
 
 This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
 
@@ -10,7 +10,7 @@ This project was bootstrapped with [Create Guten Block](https://github.com/ahmad
 or by downloading this repository as a .zip archive.
 - 🥖 Activate the plugin via your wp-admin dashboard.
 - ✍️ Start a new post using the block editor, and add a lyrics block.
-- 🎵 You can add as many song-segments to your lyrics block as you wish.
+- 🎵 You can add as many sections to your lyrics block as you wish.
 - ⚙️ You can configure the appearance of the lyrics block using the controls in the sidebar.
 - 🎤 Try it out, and have some fun!
 

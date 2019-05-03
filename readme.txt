@@ -1,11 +1,11 @@
 === Lyrics ===
 Contributors: roccotripaldi
-Tags: song lyrics, music, poetry
+Tags: lyrics, music, poetry, song lyrics
 Stable tag: 1.0
 Requires at least: 5.0
 Tested up to: 5.1.1
 
-Add song lyrics to your WordPress posts and pages.
+Add lyrics to your WordPress posts and pages.
 
 == Installation ==
 
@@ -15,8 +15,8 @@ Add song lyrics to your WordPress posts and pages.
 1. Add Lyrics to your post by clicking the '+' icon and selecting "Lyrics", or by typing "/lyrics" in the editor window.
 1. You can specify a title and artist for your lyrics, and you can chose to hide the title.
 1. You can specify an external link for your lyrics.
-1. Each lyrics can have multiple segments.
-1. You can specify if a segment has a title, and if the segment repeats.
+1. Each lyrics can have multiple sections.
+1. You can specify if a section has a title, and if the section repeats.
 1. Press publish!
 
 == Screenshots ==

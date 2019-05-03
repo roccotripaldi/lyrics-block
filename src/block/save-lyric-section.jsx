@@ -5,7 +5,7 @@ const { Component, RawHTML } = wp.element;
 const { __, sprintf } = wp.i18n;
 
 
-class SongSegmentSave extends Component {
+class LyricSectionSave extends Component {
     render() {
         const { attributes } = this.props;
         const { content, showHeading, repeats, type } = attributes;
@@ -25,4 +25,4 @@ class SongSegmentSave extends Component {
     }
 }
 
-export default SongSegmentSave;
+export default LyricSectionSave;

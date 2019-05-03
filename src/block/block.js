@@ -7,8 +7,8 @@ const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.b
 
 import LyricBlockEditor from './edit.jsx';
 import LyricBlockSave from './save.jsx';
-import SongSegmentEditor from './edit-song-segment.jsx';
-import SongSegmentSave from './save-song-segment.jsx';
+import LyricSectionEditor from './edit-lyric-section.jsx';
+import LyricSectionSave from './save-lyric-section.jsx';
 
 //  Import CSS.
 import './style.scss';
@@ -21,7 +21,8 @@ registerBlockType( 'rocco/lyrics', {
 	category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__( 'lyrics' ),
-		__( 'song lyrics' ),
+        __( 'poetry' ),
+        __( 'music' )
 	],
     attributes: {
         title: {
@@ -44,7 +45,7 @@ registerBlockType( 'rocco/lyrics', {
 	save: LyricBlockSave
 } );
 
-registerBlockType( 'rocco/song-segment', {
+registerBlockType( 'rocco/lyrics-section', {
     title: __( 'Lyric section' ),
     icon: '',
     category: 'common',
@@ -70,6 +71,6 @@ registerBlockType( 'rocco/song-segment', {
             default: true
         }
     },
-    edit: SongSegmentEditor,
-    save: SongSegmentSave
+    edit: LyricSectionEditor,
+    save: LyricSectionSave
 } );
