@@ -16,7 +16,7 @@ import './editor.scss';
 
 registerBlockType( 'rocco/lyrics', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Song Lyrics' ), // Block title.
+	title: __( 'Lyrics' ), // Block title.
 	icon: 'playlist-audio', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
@@ -45,7 +45,7 @@ registerBlockType( 'rocco/lyrics', {
 } );
 
 registerBlockType( 'rocco/song-segment', {
-    title: __( 'Song segment' ),
+    title: __( 'Lyric section' ),
     icon: '',
     category: 'common',
     parent: [ 'rocco/lyrics' ],
