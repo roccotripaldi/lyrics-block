@@ -2,7 +2,7 @@
  * External dependencies
  */
 const { Component } = wp.element;
-const { InnerBlocks } = wp.editor;
+const { InnerBlocks } = wp.blockEditor;
 const { Dashicon } = wp.components;
 
 class LyricBlockSave extends Component {

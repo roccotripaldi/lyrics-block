@@ -47,7 +47,7 @@ registerBlockType( 'rocco/lyrics', {
 
 registerBlockType( 'rocco/lyrics-section', {
     title: __( 'Lyric section' ),
-    icon: '',
+    icon: 'playlist-audio',
     category: 'common',
     parent: [ 'rocco/lyrics' ],
     attributes: {
